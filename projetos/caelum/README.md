@@ -13,9 +13,7 @@ Portanto as ações sugeridas são:
 
 # Khan: 
 
-Dado que os dados são resumidos e não a descrição de cada atividade do aluno, ficamos restritos a entender a evolução deles. Como não podemos analisar o avanço de um aluno, ficamos com poucas variáveis que mudam entre alguns grupos para analisar.
-
-As variáveis de maestria mudam em conjunto (tem correlação alta), o que faz sobrar a variável escola.
+As variáveis de maestria mudam em conjunto (tem correlação alta), o que nos levou a nos interessar pela capacidade das escolas de potencializar o aprendizado dos alunos.
 
 Agrupando por escola, tentamos rankeá-las de acordo com o quão rápido seus alunos evoluem - não somente se evoluem.
 
