@@ -66,4 +66,11 @@ for(i in 1:length(rs$escola)) {
 
 Pronto. O CSV `lm.txt` foi criado. Agora, basta importar esse CSV dentro da tabela `ranking`.
 
-Para calcular o ranking, basta executar a SQL: `select * from ranking order by a desc`.
+Para calcular o ranking, basta executar a SQL: 
+
+```
+select distinct r.escola, k.rede, b 
+from ranking r 
+join khan k on k.escola = r.escola 
+
+```
