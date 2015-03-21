@@ -1,0 +1,68 @@
+
+# Proposta de desafios.
+
+## KhanAcademy (10 pontos) 
+
+Na utilização do KhanAcademy nas escolas, parte do projeto de Inovação nas Escolas, não utilizamos apenas usuários mas temos alguns atores:
+
+(1) Conta Administrativa
+(2) Tutor
+(3) Alunos
+
+A conta administrativa da escola é a origem das contas de todos os alunos da escola. Na plataforma Khan Academy, a única forma de criar contas sem o e-mail do usuário é através do mecanismo de contas infantis. O objetivo das contas infantis é permitir que os pais possam criar uma conta para seu filho que ainda não possui e-mail. Usar esse mecanismo, portanto, vincula os alunos à conta da escola como se a escola fosse a mãe de todos os alunos cadastrados nela. Isso significa que a conta da escola tem acesso a todas as informações dos alunos – através dela, é possível alterar nome de usuário, senha e outras informações dos usuários. Como a conta da escola é a “mãe” da conta dos alunos, os alunos não podem remover a escola de seu papel de tutor. E a escola tampouco consegue se desvincular da conta de seus “filhos”.
+
+Através da API do Khan acessamos o usuário da FL e extraimos os dados dos alunos para gerar um relatório para o professor. 
+
+Algumas sugestões de desafios:
+
+1. Há formas diferentes de pensar esta associação?
+2. Captura e apresentação (num dashboard) dos dados referentes a cada um dos atores: professor (ex. número de turmas, número de alunos, etc), alunos (habilidade dominadas, pontos, tempo assistindo vídeos, etc)
+3. Construção de um web service que a partir de uma credencial na KhanAcademy acesse as informações dos alunos a partir de parâmetros ajustáveis. Alguns exemplos: o usuário "administrador" pode cadastrar vários alunos em lote, o usuário "diretor" pode consultar os resultados dos seus alunos na escola e o usuário "acompanhamento" pode ver o status de uma turma do tutor/professor para recomendar outras práticas para o educador.  
+4. Elaborar uma proposta de modelagem dos dados que serão salvos na nuvem.
+5. Como gerar alertas nas variações nos padrões de uso da plataforma? Exemplos de situações: uma turma inteira reduziu o tempo de uso ou o tempo permaneceu inalterado contudo o número de habilidades diminuiu. 
+6. A partir das visualizações geradas como podemos definir padrões adequados de uso da plataforma? Exemplo: qual seria uma recomendação de uso que envolvesse a relação entre pontos, habilidade e tempo de uso para que o gestor escolar oriente os professores. 
+ 
+
+## SSO (Single-Sign-On) (5 pontos)
+
+Hoje no Programaê! utilizamos o Code.org/Scratch. 
+Os alunos precisam criar contas separadas para cada uma das plataformas, o desafio é unificar os logins de acesso. 
+
+Algumas sugestões: 
+
+1. A partir de uma lista fornecida pela escola, como podemos criar acessos no Code.org e Scratch. (detalhe sobre o público-alvo são crianças: 9 - 12 anos que não possuem e-mail)
+2. Como medir o progresso dos alunos no Scratch, uma dica é contar o número de blocos de cada projeto público. Como fazer online em um dashboard, apenas passando o 'id' do projeto) (Dica: http://happyanalyzing.com/downloads/userAnalysis/)
+
+# Gatópolis (10 pontos)
+
+Na pasta dados/ temos algumas informações referente a um piloto feito em 2014 com alunos utilizando o jogo (Os dados estão armazenados em um formado JSON). 
+
+Algumas sugestões de desafios: 
+
+1. Como podemos criar uma visualização (dashboard) que traduza os dados dos arquivos?
+2. Através deste dashboard conseguimos sugerir para o professor como a criança está utilizando o aplicativo?
+3. Como um gestor escolar pode utilizar os resultados para verificar se o uso do aplicativo é eficaz?
+
+
+Os desafios acima são um norte para os problemas que enfrentamos. Fique a vontade para procurar qualquer pessoa da equipe durante o hackday para tirar dúvidas, comentários, novas idéias, etc; 
+
+# Referencias 
+
+## APIs 
+
+http://api-explorer.khanacademy.org/
+Overview - https://github.com/Khan/khan-api/wiki/Khan-Academy-API
+Authentication - https://github.com/Khan/khan-api/wiki/Khan-Academy-API-Authentication
+http://wiki.scratch.mit.edu/wiki/Scratch_API_%282.0%29
+
+## Dados 
+
+
+ftp://ftp.inep.gov.br/microdados/microdados_saeb_2011.zip
+outras informações estão na pasta dados/
+
+
+## Dashboards (exemplos)
+
+- [analytics.gov.br](https://analytics.usa.gov/) 
+- [Dashing](http://shopify.github.io/dashing/) | [demo](http://dashingdemo.herokuapp.com/sample)
