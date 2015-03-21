@@ -1,0 +1,9 @@
+[submodule "projetos/api"]
+	path = projetos/api
+	url = https://github.com/rodolfo3/hackday-lemann-2015
+[submodule "projetos/kahn-school-dashboard/api"]
+	path = projetos/kahn-school-dashboard/api
+	url = https://github.com/rodolfo3/hackday-lemann-2015
+[submodule "projetos/kahn-school-dashboard/UI"]
+	path = projetos/kahn-school-dashboard/UI
+	url = https://github.com/simonfan/lemann-app.git
